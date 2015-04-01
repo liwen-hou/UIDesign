@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="msapplication-tap-highlight" content="no">
+
+        <title>DSQUAREDaily</title>
+        <link href='http://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
+        
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/chui-ios-3.5.2.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <nav id="header" class='current'>
+            <h1 id="header-title">D<sup>2</sup>aily</h1>
+            <li id="setting-icon" class="fa fa-cog fa-2x" data-goto="settings"></li>
+        </nav>
+        <article id='main' class='current'>
+            <section>
+                
+                
+                <!-- Featured Design -->
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <li data-goto="feature1" class='nav'>
+                                <img src="img/feature1.jpg">
+                            </li>
+                            <div class="carousel-caption">
+                                Tadao Ando shares first New York project
+                            </div>
+                        </div>
+                        <div class="item">
+                            <li data-goto="feature2" class='nav'>
+                                <img src="img/feature2.jpg">
+                            </li>
+                            <div class="carousel-caption">
+                                NIXON's 2015 Spring/Summer Collection
+                            </div>
+                        </div>
+                        <div class="item">
+                            <li data-goto="feature3" class='nav'>
+                                <img src="img/feature3.jpg">
+                            </li>
+                            <div class="carousel-caption">
+                                Jossie Chair by Mathery Studio
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- Categories -->
+                <div class="row">
+                    <div id="main-archi" class="col-xs-6">
+                        <div id="title1"><img id="icon" src="img/archi-icon.png"> Architecture</div>
+                        <img id="architecture" src="img/archi-main.jpg">
+                    </div>
+                    <div id="main-fashion" class="col-xs-6">
+                        <div id="title2"><img id="icon" src="img/fashion-icon.png"> Fashion</div>
+                        <li data-goto="cat-fashion" class='nav'><img id="fashion" src="img/fashion-main.jpg"></li>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="main-interior" class="col-xs-6">
+                        <div id="title1"><img id="icon" src="img/interior-icon.png"> Interior</div>
+                        <img id="interior" src="img/interior-main.jpg">
+                    </div>
+                    <div id="main-lifestyle" class="col-xs-6">
+                        <div id="title2"><img id="icon" src="img/lifestyle-icon.png"> Lifestyle</div>
+                        <img id="lifestyle" src="img/lifestyle-main.jpg">
+                    </div>
+                </div>
+            </section>
+        </article>
+        
+        
+        <!-- Featured Design 1 -->
+        <nav class='next'>     
+        </nav>
+        <article id='feature1' class='next feature-content'>
+            <section>
+                <div class="row">
+                    <a class='button back' id="article-cat">
+                        <img id="icon" src="img/archi-icon.png"> Architecture
+                    </a>
+                    <div class="row" id="article-title">
+                        Tadao Ando Shares First New York Project
+                    </div>
+                    <img id="article-title-img" src="img/feature1-1.jpg">
+                </div>
+                <div class="container">
+                    <div class="article-text">
+                       The full facade of Japanese architect Tadao Ando's concrete and glass apartment block for Manhattan is revealed in this set of visualisations.<br><br>Ando's first building in New York will rise seven storeys from the corner of Kenmare and Elizabeth streets in the Nolita neighbourhood, named for its location north of Little Italy at the centre of Lower Manhattan.
+                    </div>
+                    <br>
+                    <img id="article-img" src="img/feature1-2.jpg">
+                    <div class="article-text">
+                       First unveiled last summer, 152 Elizabeth Street will accommodate seven residences ranging from 175-square-metre two-bed apartments to a 450-square-metre penthouse.<br><br>The design primarily features glass, concrete and steel materials found in many of Ando's projects, including the art and design school at the University of Monterrey and a house on the edge of a cliff in Sri Lanka.
+                    </div>
+                    <br>
+                    <img id="article-img" src="img/feature1-3.jpg">
+                    <div class="article-text">
+                       The transparent corner of the structure will be flanked by cast-in-situ concrete, which will also surround the ground floor.<br><br>"Like crystal grows within rock, the corner of the building is metaphorically thought of as a crystalline box emerging from the solid concrete volume which bookends the site," said a statement about the project.The Pritzker Prize-winning architect's design will also include a green wall that will span the entire south facade, conceived in collaboration with landscape architects M Paul Friedberg and Partners.
+                    </div>
+                </div>
+                <div id="comments">
+                    Comments:
+                    <ul class='list' id="old-comment">
+                        <!-- empty list-->
+                    </ul>
+                </div>
+                <div id="new-comment">
+                    <ul class='list' id='comment-name' ui-implements='form'>
+                        <li>
+                            <input id="name-holder" type="text" placeholder="Nickname" required>
+                        </li>
+                    </ul>
+                    <ul class='list' id='comment-text' ui-implements='form'>
+                        <li>
+                            <textarea id="comment-holder" placeholder="Your Comments" rows="8" required></textarea>
+                        </li>
+                    </ul>
+                    <button class="btn pull-right" id="send">Send</button>
+                </div>
+            </section>
+        </article>
+        
+        
+        <!-- Featured Design 2 -->
+        <nav class='next'>     
+        </nav>
+        <article id='feature2' class='next feature-content'>
+            <section>
+                <div class="row">
+                    <a class='button back' id="article-cat">
+                        <img id="icon" src="img/lifestyle-icon.png"> Lifestyle
+                    </a>
+                    <div class="row" id="article-title">
+                        NIXON'S Spring/Summer 2015 Collection
+                    </div>
+                    <img id="article-title-img" src="img/feature2-1.jpg">
+                </div>
+                <div class="container">
+                    <div class="article-text">
+                       Just in time for Spring season, Nixon is back with a whole new collection of modern and stylish timepieces. Nixon’s 2015 Spring/Summer watch collection comes with a sleek and simple design, each rocking Japanese quartz movements, stainless steel cases, steel or leather bands and custom-molded hands. Ranging in models which include the Cannon, Kingpin, Mellor, Sentry SS and Sentry 38, Nixon’s timepieces are sure to add a touch of cool to just about any outfit. Check out a preview of Nixon’s Spring/Summer 2015 collection below:
+                    </div>
+                    <br>
+                    <img id="article-img" src="img/feature2-2.jpg">
+                    <br>
+                    <br>
+                    <img id="article-img" src="img/feature2-3.jpg">
+                    <br>
+                    <br>
+                    <img id="article-img" src="img/feature2-4.jpg">
+                </div>
+                <div id="comments">
+                    Comments:
+                    <ul class='list' id="old-comment">
+                        <!-- empty list-->
+                    </ul>
+                </div>
+                <div id="new-comment">
+                    <ul class='list' id='comment-name' ui-implements='form'>
+                        <li>
+                            <input id="name-holder" type="text" placeholder="Nickname" required>
+                        </li>
+                    </ul>
+                    <ul class='list' id='comment-text' ui-implements='form'>
+                        <li>
+                            <textarea id="comment-holder" placeholder="Your Comments" rows="8" required></textarea>
+                        </li>
+                    </ul>
+                    <button class="btn pull-right" id="send">Send</button>
+                </div>
+            </section>
+        </article>
+        
+        
+        <!-- Featured Design 3 -->
+        <nav class='next'>     
+        </nav>
+        <article id='feature3' class='next feature-content'>
+            <section>
+                <div class="row">
+                    <a class='button back' id="article-cat">
+                        <img id="icon" src="img/interior-icon.png"> Interior
+                    </a>
+                    <div class="row" id="article-title">
+                        Josie Chair, the Chair that Pops
+                    </div>
+                    <img id="article-title-img" src="img/feature3-1.jpg">
+                </div>
+                <div class="container">
+                    <div class="article-text">
+                       Inspired by the protagonist of Never Been Kissed, Mathery’s new project Josie celebrates the action of seating as a triumph, popping with a joyous burst of colour.
+                    </div>
+                    <br>
+                    <img id="article-img" src="img/feature3-2.jpg">
+                    <br>
+                    <div class="article-text">
+                       Josie is the protagonist of 1999 hit high school romcom Never Been Kissed. 
+Played by Drew Barrymore, geeky Josie spent her high school years on the social outer – harassed and tormented by the cool kids. Cruelly nicknamed Josie Grossie, never invited to the prom and always the one left sitting alone on a chair at parties.<br><br>
+“But what if the party came to her?” have wondered Erika Zorzi and Matteo Sangalli , founders of Mathery Studio.
+                    </div>
+                    <br>
+                    <img id="article-img" src="img/feature3-3.jpg">
+                    <br>
+                    <div class="article-text">
+                       Initially designed as a personal project, Josie was born from the idea of empathising with a moment – the action of seating. Driven by the need to restore a WOW effect and sense of occasion, Josie celebrates the person who is seated and moreover, celebrates design.
+Josie is a performative chair fashioned from beech wood, defined by simple design features and chunky lines. But her whimsicality lies in that moment – the second before seating. Josie lives for this and responds with a joyous burst of colour.  Celebrating her glorious design, Josie evaluates the act of seating as a triumph.<br><br>
+The Josie chair was manufactured in Melbourne and can now be found celebrating at parties in Milan.
+                    </div>
+                    <br>
+                    <img id="article-img" src="img/feature3-4.jpg">
+                </div>
+                <div id="comments">
+                    Comments:
+                    <ul class='list' id="old-comment">
+                        <!-- empty list-->
+                    </ul>
+                </div>
+                <div id="new-comment">
+                    <ul class='list' id='comment-name' ui-implements='form'>
+                        <li>
+                            <input id="name-holder" type="text" placeholder="Nickname" required>
+                        </li>
+                    </ul>
+                    <ul class='list' id='comment-text' ui-implements='form'>
+                        <li>
+                            <textarea id="comment-holder" placeholder="Your Comments" rows="8" required></textarea>
+                        </li>
+                    </ul>
+                    <button class="btn pull-right" id="send">Send</button>
+                </div>
+            </section>
+        </article>
+        
+        <!-- Category-Fashion -->
+         <nav id="header" class='next'>
+             <a class='button back'>Home</a>
+            <h1 id="header-title"><img id="icon" src="img/fashion-icon.png"> Fashion</h1>
+        </nav>
+        <article id='cat-fashion' class='next'>
+            <section>
+                <li id="cat1" data-goto="fashion1" class='nav'>
+                    <div id="cat-title">Tom Ford Movie 'Nocturnal Animals' In The Works</div>
+                    <img id="cat-img" src="img/cat1.jpg">
+                </li>
+                <li id="cat2" data-goto="fashion2" class='nav'>
+                    <div id="cat-title">Marc by Marc Jacobs is Officially No More</div>
+                    <img id="cat-img" src="img/cat2.jpg">
+                </li>
+                <li id="cat3" data-goto="fashion3" class='nav'>
+                    <div id="cat-title">Review on Valentino SS 2015 Ready-to-Wear</div>
+                    <img id="cat-img" src="img/cat3.jpg">
+                </li>
+                <li id="cat4" data-goto="fashion4" class='nav'>
+                    <div id="cat-title">Karl Lagerfeld’s Method</div>
+                    <img id="cat-img" src="img/cat4.jpg">
+                </li>
+                <li id="cat5" data-goto="fashion5" class='nav'>
+                    <div id="cat-title">Adidas-Fifty Shades of Colours</div>
+                    <img id="cat-img" src="img/cat5.jpg">
+                </li>
+            </section>
+        </article>
+        
+        <!-- Featured Design 3 -->
+        <nav class='next'>     
+        </nav>
+        <article id='fashion1' class='next feature-content'>
+            <section>
+                <div class="row">
+                    <a class='button back' id="article-cat">
+                        <img id="icon" src="img/fashion-icon.png"> Fashion
+                    </a>
+                    <div class="row" id="article-title">
+                        Tom Ford Movie 'Nocturnal Animals' in the Works
+                    </div>
+                    <img id="article-title-img" src="img/cat1-1.jpg">
+                </div>
+                <div class="container">
+                    <div class="article-text">
+                       Fashion designer and filmmaker Tom Ford is working on his next movie project, according to The Hollywood Reporter.<br><br>George Clooney has been attached to the film as a producer. Meanwhile, Jake Gyllenhaal and Amy Adams have been tapped to star in the upcoming project, Empire Online reports. Joaquin Phoenix and Aaron Taylor-Johnson are also rumored to be among the actors Ford wants to hire for the film.
+                    </div>
+                    <br>
+                    <img id="article-img" src="img/cat1-2.jpg">
+                    <br>
+                    <div class="article-text">
+                      The film, whose screenplay was written by Ford, titled "Nocturnal Animals" is an adaptation of Austin Wright's book titled "Tony and Susan." The book was first published in 1993 and re-issued in 2011.<br><br>
+
+The story of the book is divided into two tracks. The first track is about Susan, a woman who receives a book from her ex-husband, Tony, with whom she parted ways 20 years ago. The other track is the story in Tony's book.<br><br>
+
+Speaking of how he approached writing the upcoming film's script, Ford told WWD in an interview, "A book is a book; a film is a film. They are totally different things. Sometimes things are subtle in a book because there's an inner monologue with the character, and turning it into a film, you don't have that inner monologue - unless you do, which I don't love."
+                    </div>
+                    <br>
+                    <img id="article-img" src="img/cat1-3.jpg">
+                
+                </div>
+                <div id="comments">
+                    Comments:
+                    <ul class='list' id="old-comment">
+                        <!-- empty list-->
+                    </ul>
+                </div>
+                <div id="new-comment">
+                    <ul class='list' id='comment-name' ui-implements='form'>
+                        <li>
+                            <input id="name-holder" type="text" placeholder="Nickname" required>
+                        </li>
+                    </ul>
+                    <ul class='list' id='comment-text' ui-implements='form'>
+                        <li>
+                            <textarea id="comment-holder" placeholder="Your Comments" rows="8" required></textarea>
+                        </li>
+                    </ul>
+                    <button class="btn pull-right" id="send">Send</button>
+                </div>
+            </section>
+        </article>
+        
+        <!-- Settings -->
+        <nav id="header" class='next'>
+            <a class='button back'>Home</a>
+            <h1 id="header-title">Settings</h1>
+        </nav>
+        <article id='settings' class='next'>
+            <section>
+                <ul class='list'>
+                    <li>
+                        <div>
+                            <label>Font Size: <span id='rangeValue'></span>px</label>
+                            <input type="range" id="changeFontSize" value="17" min="10" max="30">
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </article>
+        
+        
+        <script src="js/jquery-2.0.3.js"></script>
+        <script src="js/chui-3.5.2.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
