@@ -22,8 +22,8 @@ $("#send").on("singletap", function() {
     if (content.length < 1) {
         $.UIPopup({
             id: "note-new-warning",
-            title: 'Content is empty!',
-            message: 'Do not leave empty comment.',
+            title: 'Oops!',
+            message: 'It seems you forgot to leave your valuable opinion. (:',
             continueButton: 'OK',
             callback: function() {
                 content = ""; 
@@ -47,4 +47,15 @@ $('#changeFontSize').on('change', function() {
     var fontSize = $(this).val();
     $('#rangeValue').html($(this).val());
     $('.article-text').css("font-size", fontSize+"px");
+});
+
+//night mode
+$('.switch').on('singletap swipeleft swiperight', function() {
+    if (this.classList.contains('on')) {
+        $('.article-text').css("color", "black");
+        $('body').css("background-color", "");
+    } else {
+        $('.article-text').css("color", "#A6A69E");
+        $('body').css("background-color", "#322C3D");
+    }
 });
